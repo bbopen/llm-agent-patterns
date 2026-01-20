@@ -1,0 +1,32 @@
+{
+  "name": "production-agent-guide",
+  "version": "1.0.0",
+  "description": "A practical TypeScript guide to production agents, derived from 28 research reports and 80 years of theory.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "example:hello": "npx ts-node 01-the-loop/examples/hello-world.ts",
+    "example:tools": "npx ts-node 01-the-loop/examples/with-tools.ts",
+    "docs:serve": "npx serve docs -p 3000",
+    "docs:open": "open http://localhost:3000 && npm run docs:serve"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "playwright": "^1.57.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
